@@ -392,9 +392,9 @@ Wire Wire Line
 	12100 2900 12450 2900
 Wire Wire Line
 	7200 1400 7200 2550
-Text Label 14850 2200 0    50   ~ 0
-Vm_out
 Text Label 14850 2000 0    50   ~ 0
+Vm_out
+Text Label 14850 2200 0    50   ~ 0
 Vm_tapOut
 $Comp
 L Device:L_Core_Ferrite L1
@@ -2306,7 +2306,7 @@ L Device:R_US R38
 U 1 1 5E8AF621
 P 5100 1850
 F 0 "R38" V 4895 1850 50  0000 C CNN
-F 1 "567" V 4986 1850 50  0000 C CNN
+F 1 "75" V 4986 1850 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5140 1840 50  0001 C CNN
 F 3 "~" H 5100 1850 50  0001 C CNN
 	1    5100 1850
@@ -2338,7 +2338,7 @@ U 1 1 5E8AF632
 P 5450 2100
 F 0 "D1" V 5404 2179 50  0000 L CNN
 F 1 "3,3 V" V 5495 2179 50  0000 L CNN
-F 2 "Diode_SMD:D_SOT-23_ANK" H 5450 2100 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5450 2100 50  0001 C CNN
 F 3 "~" H 5450 2100 50  0001 C CNN
 	1    5450 2100
 	0    1    1    0   
@@ -2571,9 +2571,9 @@ Wire Wire Line
 Text Label 14750 2400 0    50   ~ 0
 Vm_boost
 Wire Wire Line
-	14850 2000 15300 2000
-Wire Wire Line
 	14850 2200 15300 2200
+Wire Wire Line
+	14850 2000 15300 2000
 Wire Wire Line
 	14750 2400 15300 2400
 $Comp
@@ -2611,17 +2611,6 @@ Wire Wire Line
 Text Label 14550 2600 0    50   ~ 0
 Vm_LTSP_25-NP
 $Comp
-L Connector_Generic:Conn_01x08 J20
-U 1 1 5E7D91EF
-P 15500 2400
-F 0 "J20" H 15413 2815 50  0000 L CNN
-F 1 "Tensão de Medição" H 15433 1870 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 15500 2400 50  0001 C CNN
-F 3 "~" H 15500 2400 50  0001 C CNN
-	1    15500 2400
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R_US R37
 U 1 1 5E82D06B
 P 4350 1200
@@ -2631,5 +2620,16 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4390 1190
 F 3 "~" H 4350 1200 50  0001 C CNN
 	1    4350 1200
 	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J20
+U 1 1 5E7D91EF
+P 15500 2300
+F 0 "J20" H 15413 1772 50  0000 L CNN
+F 1 "Tensão de Medição" H 15433 2715 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 15500 2300 50  0001 C CNN
+F 3 "~" H 15500 2300 50  0001 C CNN
+	1    15500 2300
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
