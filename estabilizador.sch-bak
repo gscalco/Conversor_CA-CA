@@ -2579,17 +2579,6 @@ F 3 "" H 12750 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12750 4200 12900 4200
-$Comp
-L Connector_Generic:Conn_01x08 J20
-U 1 1 5E7D91EF
-P 15500 2300
-F 0 "J20" H 15413 1772 50  0000 L CNN
-F 1 "Tensão de Medição" H 15433 2756 50  0000 C CNN
-F 2 "" H 15500 2300 50  0001 C CNN
-F 3 "~" H 15500 2300 50  0001 C CNN
-	1    15500 2300
-	1    0    0    -1  
-$EndComp
 Text Label 14750 2400 0    50   ~ 0
 Vm_boost
 Wire Wire Line
@@ -2632,4 +2621,15 @@ Wire Wire Line
 	14550 2600 15300 2600
 Text Label 14550 2600 0    50   ~ 0
 Vm_LTSP_25-NP
+$Comp
+L Connector_Generic:Conn_01x08 J20
+U 1 1 5E7D91EF
+P 15500 2400
+F 0 "J20" H 15413 2815 50  0000 L CNN
+F 1 "Tensão de Medição" H 15433 1870 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 15500 2400 50  0001 C CNN
+F 3 "~" H 15500 2400 50  0001 C CNN
+	1    15500 2400
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
