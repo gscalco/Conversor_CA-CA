@@ -2094,6 +2094,33 @@ F 3 "~" H 9150 7550 50  0001 C CNN
 	1    9150 7550
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	9650 8750 9700 8750
+Connection ~ 9400 8750
+Wire Wire Line
+	9450 8750 9400 8750
+$Comp
+L Device:Jumper_NO_Small JP7
+U 1 1 5CB58A21
+P 9550 8750
+F 0 "JP7" V 9550 8798 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 9595 8798 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 8750 50  0001 C CNN
+F 3 "~" H 9550 8750 50  0001 C CNN
+	1    9550 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12L #PWR0104
+U 1 1 5CB5754E
+P 9700 8750
+F 0 "#PWR0104" H 9700 8600 50  0001 C CNN
+F 1 "+12L" H 9715 8923 50  0000 C CNN
+F 2 "" H 9700 8750 50  0001 C CNN
+F 3 "" H 9700 8750 50  0001 C CNN
+	1    9700 8750
+	1    0    0    -1  
+$EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J19
 U 1 1 5CA0EED0
@@ -2105,6 +2132,10 @@ F 3 "~" H 9150 8850 50  0001 C CNN
 	1    9150 8850
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	9400 8750 9400 8700
+Wire Wire Line
+	9350 8750 9400 8750
 Wire Wire Line
 	9400 8950 9400 9000
 Wire Wire Line
@@ -2601,8 +2632,4 @@ F 3 "~" H 11800 4000 50  0001 C CNN
 	1    11800 4000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9350 8750 9400 8750
-Wire Wire Line
-	9400 8750 9400 8700
 $EndSCHEMATC
