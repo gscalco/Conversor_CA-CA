@@ -2211,8 +2211,6 @@ Wire Wire Line
 	10400 8450 10400 8400
 Text Label 10700 8800 2    50   ~ 0
 Source3
-Wire Wire Line
-	10700 8800 10300 8800
 $Comp
 L power:GNDREF #PWR?
 U 1 1 601A4626
@@ -2339,8 +2337,6 @@ Wire Wire Line
 	13350 8450 13350 8400
 Text Label 13650 8800 2    50   ~ 0
 Source4
-Wire Wire Line
-	13650 8800 13250 8800
 $Comp
 L power:GNDREF #PWR?
 U 1 1 6085371F
@@ -2576,14 +2572,6 @@ F 3 "" H 13050 8550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13750 7450 13750 7800
-Wire Wire Line
-	10750 8100 11050 8100
-Wire Wire Line
-	10750 8200 11050 8200
-Wire Wire Line
-	13700 8100 14000 8100
-Wire Wire Line
-	13700 8200 14000 8200
 $Comp
 L Device:C_Small C9
 U 1 1 5CD9513E
@@ -2597,12 +2585,112 @@ F 3 "~" H 13500 1500 50  0001 C CNN
 $EndComp
 Text Label 11550 7900 2    50   ~ 0
 Source1
-Wire Wire Line
-	11550 7900 11150 7900
 Connection ~ 11150 7900
 Text Label 14500 7900 2    50   ~ 0
 Source2
-Wire Wire Line
-	14500 7900 14100 7900
 Connection ~ 14100 7900
+$Comp
+L estabilizador-rescue:TestPoint-Connector TP9
+U 1 1 5E6A657C
+P 11100 8100
+F 0 "TP9" H 11158 8174 50  0000 L CNN
+F 1 "TestPoint" H 11158 8129 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 11300 8100 50  0001 C CNN
+F 3 "~" H 11300 8100 50  0001 C CNN
+	1    11100 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L estabilizador-rescue:TestPoint-Connector TP11
+U 1 1 5E6CE798
+P 11100 8200
+F 0 "TP11" H 10866 8274 50  0000 L CNN
+F 1 "TestPoint" H 11158 8229 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 11300 8200 50  0001 C CNN
+F 3 "~" H 11300 8200 50  0001 C CNN
+	1    11100 8200
+	-1   0    0    1   
+$EndComp
+$Comp
+L estabilizador-rescue:TestPoint-Connector TP10
+U 1 1 5E6F7281
+P 11600 7900
+F 0 "TP10" H 11658 7974 50  0000 L CNN
+F 1 "TestPoint" H 11658 7929 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 11800 7900 50  0001 C CNN
+F 3 "~" H 11800 7900 50  0001 C CNN
+	1    11600 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L estabilizador-rescue:TestPoint-Connector TP12
+U 1 1 5E7477E4
+P 10750 8800
+F 0 "TP12" H 10808 8874 50  0000 L CNN
+F 1 "TestPoint" H 10808 8829 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10950 8800 50  0001 C CNN
+F 3 "~" H 10950 8800 50  0001 C CNN
+	1    10750 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L estabilizador-rescue:TestPoint-Connector TP13
+U 1 1 5E76F53B
+P 14050 8100
+F 0 "TP13" H 14108 8174 50  0000 L CNN
+F 1 "TestPoint" H 14108 8129 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 14250 8100 50  0001 C CNN
+F 3 "~" H 14250 8100 50  0001 C CNN
+	1    14050 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L estabilizador-rescue:TestPoint-Connector TP14
+U 1 1 5E7BF769
+P 14550 7900
+F 0 "TP14" H 14608 7974 50  0000 L CNN
+F 1 "TestPoint" H 14608 7929 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 14750 7900 50  0001 C CNN
+F 3 "~" H 14750 7900 50  0001 C CNN
+	1    14550 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L estabilizador-rescue:TestPoint-Connector TP16
+U 1 1 5E7E7515
+P 13700 8800
+F 0 "TP16" H 13758 8874 50  0000 L CNN
+F 1 "TestPoint" H 13758 8829 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 13900 8800 50  0001 C CNN
+F 3 "~" H 13900 8800 50  0001 C CNN
+	1    13700 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 8100 11100 8100
+Wire Wire Line
+	10750 8200 11100 8200
+Wire Wire Line
+	11150 7900 11600 7900
+Wire Wire Line
+	10300 8800 10750 8800
+Wire Wire Line
+	14100 7900 14550 7900
+Wire Wire Line
+	13700 8100 14050 8100
+Wire Wire Line
+	13700 8200 14050 8200
+Wire Wire Line
+	13250 8800 13700 8800
+$Comp
+L estabilizador-rescue:TestPoint-Connector TP15
+U 1 1 5E79751A
+P 14050 8200
+F 0 "TP15" H 13858 8274 50  0000 L CNN
+F 1 "TestPoint" H 14108 8229 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 14250 8200 50  0001 C CNN
+F 3 "~" H 14250 8200 50  0001 C CNN
+	1    14050 8200
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
