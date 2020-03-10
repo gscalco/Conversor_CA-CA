@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name rele)(type KiCad)(uri C:/Users/Aluno/Desktop/Potencia/Potencia/rele.pretty)(options "")(descr ""))
-  (lib (name Relay)(type KiCad)(uri "$(KIPRJMOD)/Relay.pretty")(options "")(descr ""))
-  (lib (name Inductors)(type KiCad)(uri "$(KIPRJMOD)/Inductors.pretty")(options "")(descr ""))
-)
